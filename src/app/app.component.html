@@ -1,0 +1,34 @@
+<div class="row p-5">
+  <h3 class="p-0">Lista Giocatori</h3>
+  <table
+    datatable
+    class="table table-bordered"
+    [dtOptions]="dtOptions"
+    [dtTrigger]="dtTrigger"
+  >
+    <thead>
+      <tr>
+        <th class="text-center">Ruolo</th>
+        <th>Giocatore</th>
+        <th class="text-right">Squadra</th>
+        <th class="text-right">Quotazione</th>
+        <th class="text-center">Selezione</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of listaCalciatori">
+        <td class="text-center">
+          {{ player.ruolo }}
+        </td>
+        <td>{{ player.calciatore }}</td>
+        <td class="text-right">{{ player.squadra }}</td>
+        <td class="text-right">{{ player.quotazione }}</td>
+        <td class="text-center">
+          <button class="btn btn-sm btn-outline-danger" type="button">
+            Obiettivo
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
