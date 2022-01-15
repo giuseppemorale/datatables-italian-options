@@ -5,7 +5,6 @@ import { DataTableOptions } from './util/datatable-options.util';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
   dtOptions: any = {};
@@ -26,6 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   public ngOnInit(): void {
     this.dtOptions = DataTableOptions.Italian;
+    this.dtTrigger.next(this.listaCalciatori);
   }
 
   public ngOnDestroy(): void {
