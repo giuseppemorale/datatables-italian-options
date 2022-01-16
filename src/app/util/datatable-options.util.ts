@@ -17,11 +17,6 @@ export class DataTableOptions {
         next: 'Successivo',
         last: 'Fine',
       },
-      aria: {
-        sortAscending: ': attiva per ordinare la colonna in ordine crescente',
-        sortDescending:
-          ': attiva per ordinare la colonna in ordine decrescente',
-      },
     },
   };
 }
