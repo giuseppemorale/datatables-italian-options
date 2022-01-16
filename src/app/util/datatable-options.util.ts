@@ -1,7 +1,5 @@
 export class DataTableOptions {
   public static Italian = {
-    pagingType: 'full_numbers',
-    pageLength: 10,
     language: {
       emptyTable: 'Nessun dato presente nella tabella',
       info: 'Vista da _START_ a _END_ di _TOTAL_ elementi',
