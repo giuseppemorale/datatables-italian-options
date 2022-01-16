@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, NgbModule, DataTablesModule],
   declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule, NgbModule, DataTablesModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
